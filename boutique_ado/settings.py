@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
+import dj_database_url
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -125,6 +126,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.parse('postgres://kuskfwieqqepgq:77ced06da35ceb5cea225ba37489e9521a38fed67766ad32abc7e7b34a9487f4@ec2-176-34-211-0.eu-west-1.compute.amazonaws.com:5432/d92nka1cpge36h')
+# }
 
 
 # Password validation
